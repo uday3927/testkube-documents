@@ -515,10 +515,21 @@ const sidebars = {
           id: "articles/examples/soapui-basic",
         },
         {
-          type: "doc",
+          type: "category",
           label: "Gatling",
-          id: "articles/examples/gatling-basic",
-        },
+          items: [
+            {
+              type: "doc",
+              label: "Basic",
+              id: "articles/examples/gatling-basic",
+          },
+          {
+              type: "doc",
+              label: "Distributed",
+              id: "articles/examples/gatling-distributed",
+          },
+        ],
+      },
         {
           type: "doc",
           label: "Maven",
